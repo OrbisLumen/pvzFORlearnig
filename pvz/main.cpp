@@ -223,7 +223,7 @@ void gameInit() {
 	srand(time(NULL));
 
 	// create window
-	initgraph(WIN_WIDTH, WIN_HEIGHT, 1);
+	initgraph(WIN_WIDTH, WIN_HEIGHT, 0);
 
 	// set font style
 	LOGFONT f;
@@ -318,7 +318,7 @@ void startUI() {
 				}
 				Sleep(3000);
 				mciSendString("close res/sound/bg.mp3", 0, 0, 0);
-				mciSendString("play res/sound/UraniwaNi.mp3 repeat", 0, 0, 0);
+				mciSendString("play res/sound/MainBg.mp3 repeat", 0, 0, 0);
 				return;
 			}
 		}
